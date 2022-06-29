@@ -19,14 +19,14 @@ public class Liste {
 	}
 
 	public void remove(int wert) {
-		if (kopf.get() == wert) {
+		if (kopf.getInhalt() == wert) {
 			kopf = kopf.getNext();
 		}
 		kopf.remove(wert);
 	}
 
 	public void firstLast() {
-		System.out.print(kopf.get() + " ");
+		System.out.print(kopf.getInhalt() + " ");
 		kopf.firstLast();
 	}
 

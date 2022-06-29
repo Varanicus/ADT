@@ -20,13 +20,13 @@ public class ListenElement {
 		return next;
 	}
 
-	public int get() {
+	public int getInhalt() {
 		return inhalt;
 	}
 
 	public void remove(int wert) {
 		if (next != null) {
-			if (next.get() == wert) {
+			if (next.getInhalt() == wert) {
 				if (next.getNext() != null) {
 					next = next.getNext();
 				} else {
