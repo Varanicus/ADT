@@ -1,7 +1,7 @@
 
 public class Quicksort {
 
-	public int teilung(int list[], final int first, final int last) {
+	public int divison(int list[], final int first, final int last) {
 	
 		int pivot = list[(first+ last)/2];
 		int positionLeft = first;
@@ -31,7 +31,7 @@ public class Quicksort {
 	
 	public void quicksort(int list[],final int first, final int last) {
 		
-		int index= teilung(list,first,last);
+		int index= divison(list,first,last);
 		
 		if(first<index-1) {
 			quicksort(list,first,index-1);

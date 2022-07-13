@@ -28,9 +28,9 @@ public class Main {
 		System.out.println(liste);*/
 		
 		Quicksort q= new Quicksort();
-		int[] zuSortieren= {7,2,4,8,6,1,3,5,9};
+		int[] zuSortieren= {7,2,4,8,6,1,3,5,9,3};
 		System.out.println(Arrays.toString(zuSortieren));
-		q.quicksort(zuSortieren,0,8);
+		q.quicksort(zuSortieren,0,9);
 		System.out.println(Arrays.toString(zuSortieren));
 	}
 
