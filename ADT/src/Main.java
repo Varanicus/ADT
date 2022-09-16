@@ -2,8 +2,34 @@ import java.util.Arrays;
 
 public class Main {
 
-	public static void main(String[] args) {
-	/*	Liste liste = new Liste(3);
+	public static void main(String[] args) throws Exception {
+		
+		
+		Stack stack = new Stack(1);
+		      stack.push(3);
+		      stack.push(5);
+		      stack.push(7);
+		      stack.push(9);
+		      stack.push(11);
+		      stack.push(13);
+		     
+		      stack.top();
+		      System.out.println(stack);
+		      System.out.println( stack.getGroeﬂe());
+		      
+	  Queue queue = new Queue(1);
+	  queue.enqeue(2);
+	  queue.enqeue(4);
+	  queue.enqeue(6);
+	  queue.enqeue(8);
+	  queue.top();
+	  System.out.println(queue);
+	  
+	  
+
+		
+		
+		/*Liste liste = new Liste(3);
 		liste.add(5);
 		liste.add(43);
 		liste.add(9);
@@ -25,13 +51,13 @@ public class Main {
 		System.out.println("\n"+liste.find(4));
 		
 		liste.remove(7);
-		System.out.println(liste);*/
+		System.out.println(liste);
 		
-		Quicksort q= new Quicksort();
+		/*Quicksort q= new Quicksort();
 		int[] zuSortieren= {7,2,4,8,6,1,3,5,9,3};
 		System.out.println(Arrays.toString(zuSortieren));
 		q.quicksort(zuSortieren,0,9);
-		System.out.println(Arrays.toString(zuSortieren));
+		System.out.println(Arrays.toString(zuSortieren));*/
 	}
 
 }

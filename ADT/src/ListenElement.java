@@ -88,5 +88,33 @@ public class ListenElement {
 		}
 
 	}
+	
+public boolean isEmpty() {return true;}
+	
 
+	
+
+	
+	public void remove() {
+		if(next==null) {
+			System.out.println(inhalt);
+		
+	}else {
+		next.remove();
+	}
+		return;
 }
+	
+	 public int getGroesse(int anzahl){
+		 int zahl = anzahl+1;
+		 if(next!=null){
+			return next.getGroesse(zahl);}
+		 
+		 return zahl;
+			 
+		 }
+	 
+
+	 }
+
+

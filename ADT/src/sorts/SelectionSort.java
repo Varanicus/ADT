@@ -1,3 +1,4 @@
+package sorts;
 public class SelectionSort {
 
 	static int[] arr = { 4, 7, 9, 1, 6, 3 };
