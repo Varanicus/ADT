@@ -44,6 +44,13 @@ public class Arraystack
 	   return copy;
    }
    
+   public int[] add(int[] x) {
+	   
+	   int[] sum= new int[100];
+	   
+	   return sum;
+   }
+   
    
    public void pop()
    {

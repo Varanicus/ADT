@@ -32,9 +32,13 @@ public class Main {
 	  s.push(78);
 	  s.push(6);
 	  s.push(3);
+	  s.push(8);
 	  System.out.println(" ");
 	  s.copy();
-	
+	  
+	  int[] add= {5,4,6,9,12,0};
+	  System.out.println(" ");
+	  s.add(add);
 	
 
 	  
