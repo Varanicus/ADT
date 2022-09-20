@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		
-		
+	/*	
 		Stack stack = new Stack(1);
 		      stack.push(3);
 		      stack.push(5);
@@ -24,6 +24,19 @@ public class Main {
 	  queue.enqeue(8);
 	  queue.top();
 	  System.out.println(queue);
+	  */
+	  Arraystack s=new Arraystack();
+	  s.push(1);
+	  s.push(3);
+	  s.push(5);
+	  s.push(78);
+	  s.push(6);
+	  s.push(3);
+	  System.out.println(" ");
+	  s.copy();
+	
+	
+
 	  
 	  
 
