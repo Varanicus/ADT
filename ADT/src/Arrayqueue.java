@@ -43,9 +43,9 @@ public class Arrayqueue {
 
 	public void concet(Arrayqueue stapel2) {
 		this.stapel2 = stapel2;
-		
+
 		while (!stapel2.empty()) {
-			stapel[tos ] = stapel2.front();
+			stapel[tos] = stapel2.front();
 			stapel2.dequeue();
 			tos++;
 
@@ -55,19 +55,15 @@ public class Arrayqueue {
 
 	public boolean equal(int x) {
 
-		int tmptos = tos-1;
-		boolean checker = false;
-
+		int tmptos = tos - 1;
 		while (tmptos > 0) {
 			if (stapel[tmptos] == x) {
-				checker = true;
+
 				return true;
 			} else {
 				tmptos--;
-
 			}
 		}
-
 		return false;
 	}
 
