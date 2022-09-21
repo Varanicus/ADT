@@ -50,13 +50,23 @@ public class Main {
 		q.enqueue(5);
 		q.enqueue(88);
 	
+		q.ausgabe();
+
+
+
+		
+		Arrayqueue s = new Arrayqueue();
+		s.enqueue(1);
+		s.enqueue(2);
+		s.enqueue(3);
+		s.enqueue(4);
+		s.enqueue(5);
+		s.ausgabe();
+		
+		q.concet(s);
+		q.ausgabe();
 		
 		
-		Arrayqueue.ausgabe();
-		System.out.println(" ");
-		q.dequeue();
-		Arrayqueue.ausgabe();
-		//q.enqueue(1);
 	
 
 	  

@@ -1,14 +1,15 @@
 
 public class Arrayqueue {
-	private static int[] stapel;
-	private static int tos;
+	private  int[] stapel;
+	private  Arrayqueue stapel2;
+	private  int tos;
 
 	public Arrayqueue() {
 		stapel = new int[100];
 		tos = 0;
 	}
 
-	public static void ausgabe() {
+	public void ausgabe() {
 
 		int dummy = 0;
 		while (dummy != tos) {
@@ -17,6 +18,7 @@ public class Arrayqueue {
 			dummy++;
 
 		}
+		System.out.println(" ");
 
 	}
 
@@ -38,12 +40,24 @@ public class Arrayqueue {
 		}
 		tos--;
 	}
+	
+	public void concet(Arrayqueue stapel2) {
+		 this.stapel2=stapel2;
+		tos++;
+		while(!stapel2.empty()) {
+			stapel[tos-1]=stapel2.front();
+			stapel2.dequeue();
+			tos++;
+		}
 
-	public int top() {
+	}
+	
+
+	public int front() {
 		if (!empty())
 			return stapel[0];
 		else
-			return -1;
+			return -999;
 	}
 
 	public boolean empty() {
