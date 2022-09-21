@@ -26,7 +26,6 @@ public class Arrayqueue {
 		if (tos < 99) {
 
 			stapel[tos] = x;
-			// System.out.print(x + " ");
 			tos++;
 
 		}
