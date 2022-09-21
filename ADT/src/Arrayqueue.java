@@ -1,8 +1,8 @@
 
 public class Arrayqueue {
-	private  int[] stapel;
-	private  Arrayqueue stapel2;
-	private  int tos;
+	private int[] stapel;
+	private Arrayqueue stapel2;
+	private int tos;
 
 	public Arrayqueue() {
 		stapel = new int[100];
@@ -40,18 +40,36 @@ public class Arrayqueue {
 		}
 		tos--;
 	}
-	
+
 	public void concet(Arrayqueue stapel2) {
-		 this.stapel2=stapel2;
-		tos++;
-		while(!stapel2.empty()) {
-			stapel[tos-1]=stapel2.front();
+		this.stapel2 = stapel2;
+		
+		while (!stapel2.empty()) {
+			stapel[tos ] = stapel2.front();
 			stapel2.dequeue();
 			tos++;
+
 		}
 
 	}
-	
+
+	public boolean equal(int x) {
+
+		int tmptos = tos-1;
+		boolean checker = false;
+
+		while (tmptos > 0) {
+			if (stapel[tmptos] == x) {
+				checker = true;
+				return true;
+			} else {
+				tmptos--;
+
+			}
+		}
+
+		return false;
+	}
 
 	public int front() {
 		if (!empty())
@@ -61,7 +79,7 @@ public class Arrayqueue {
 	}
 
 	public boolean empty() {
-		return (tos == -1);
+		return (tos == 0);
 	}
 
 }

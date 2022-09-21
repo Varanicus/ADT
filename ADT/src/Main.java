@@ -66,6 +66,8 @@ public class Main {
 		q.concet(s);
 		q.ausgabe();
 		
+		System.out.println( q.equal(5));
+		
 		
 	
 
