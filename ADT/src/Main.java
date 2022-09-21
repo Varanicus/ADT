@@ -25,6 +25,8 @@ public class Main {
 	  queue.top();
 	  System.out.println(queue);
 	  */
+		
+		/*
 	  Arraystack s=new Arraystack();
 	  s.push(1);
 	  s.push(3);
@@ -38,7 +40,23 @@ public class Main {
 	  
 	  int[] add= {5,4,6,9,12,0};
 	  System.out.println(" ");
-	  s.add(add);
+	  s.add(add);*/
+		
+		Arrayqueue q = new Arrayqueue();
+		q.enqueue(2);
+		q.enqueue(9);
+		q.enqueue(78);
+		q.enqueue(34);
+		q.enqueue(5);
+		q.enqueue(88);
+	
+		
+		
+		Arrayqueue.ausgabe();
+		System.out.println(" ");
+		q.dequeue();
+		Arrayqueue.ausgabe();
+		//q.enqueue(1);
 	
 
 	  
