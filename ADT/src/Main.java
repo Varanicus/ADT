@@ -9,7 +9,8 @@ public class Main {
 		
 		
 		BuildTree mytree = new BuildTree();
-		mytree.root.left.show();
+		mytree.root.insert(75);
+		mytree.root.left.right.show();
 		
 		
 		
@@ -40,7 +41,7 @@ public class Main {
 	  queue.enqeue(8);
 	  queue.top();
 	  System.out.println(queue);
-	  */
+	  *
 		
 		/*
 	  Arraystack s=new Arraystack();
@@ -58,7 +59,7 @@ public class Main {
 	  System.out.println(" ");
 	  s.add(add);*/
 		
-	/*	Arrayqueue q = new Arrayqueue();
+		Arrayqueue q = new Arrayqueue();
 		q.enqueue(200);
 		q.enqueue(9);
 		q.enqueue(78);
@@ -82,7 +83,7 @@ public class Main {
 		q.concet(s);
 		q.ausgabe();
 		
-		System.out.println( q.equal(9));*/
+		System.out.println( q.equal(200));
 		
 
 		/*Liste liste = new Liste(3);
