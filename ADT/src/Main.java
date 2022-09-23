@@ -1,8 +1,24 @@
-import java.util.Arrays;
+
+
+import binarytree.BuildTree;
 
 public class Main {
 
 	public static void main(String[] args) throws Exception {
+		
+		
+		
+		BuildTree mytree = new BuildTree();
+		mytree.root.left.show();
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	/*	
 		Stack stack = new Stack(1);
@@ -42,8 +58,8 @@ public class Main {
 	  System.out.println(" ");
 	  s.add(add);*/
 		
-		Arrayqueue q = new Arrayqueue();
-		q.enqueue(2);
+	/*	Arrayqueue q = new Arrayqueue();
+		q.enqueue(200);
 		q.enqueue(9);
 		q.enqueue(78);
 		q.enqueue(34);
@@ -66,16 +82,9 @@ public class Main {
 		q.concet(s);
 		q.ausgabe();
 		
-		System.out.println( q.equal(5));
+		System.out.println( q.equal(9));*/
 		
-		
-	
 
-	  
-	  
-
-		
-		
 		/*Liste liste = new Liste(3);
 		liste.add(5);
 		liste.add(43);
