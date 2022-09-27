@@ -1,16 +1,27 @@
 
 
-import binarytree.BuildTree;
+
+import binarytree.Element;
 
 public class Main {
+	
+	public static Element  root;
 
 	public static void main(String[] args) throws Exception {
 		
 		
 		
-		BuildTree mytree = new BuildTree();
-		mytree.root.insert(75);
-		mytree.root.left.right.show();
+	
+	    root = new Element(42);
+		root.insert(9);
+	    root.insert(8);
+		root.insert(14);
+		root.insert(90);
+		root.insert(222);
+		root.insert(569);
+		root.insert(98);
+		System.out.println(root.depth(1));
+		root.preOrder();
 		
 		
 		
@@ -57,7 +68,7 @@ public class Main {
 	  
 	  int[] add= {5,4,6,9,12,0};
 	  System.out.println(" ");
-	  s.add(add);*/
+	  s.add(add);
 		
 		Arrayqueue q = new Arrayqueue();
 		q.enqueue(200);
