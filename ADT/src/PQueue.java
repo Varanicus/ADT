@@ -43,6 +43,8 @@ public class PQueue {
 		
 	}
 	
+	
+	
 	public boolean empty(){
 		return pqueue.isEmpty();
 	}
