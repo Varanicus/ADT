@@ -1,14 +1,35 @@
-import binarytree.Element;
+
 
 public class Main {
 	
-	public static Element  root;
+	//public static Element  root;
 
 	public static void main(String[] args) throws Exception {
-		
-		
-		
 	
+		PQueue pqueue=new PQueue();
+		pqueue.insert(new Notruf(1, "Unfall 1", 9,30,0,3));
+		pqueue.insert(new Notruf(2, "Unfall 2", 9,32,0,2));
+		pqueue.insert(new Notruf(3, "Unfall 3", 9,34,0,2));
+		pqueue.insert(new Notruf(4, "Unfall 4", 9,36,0,1));
+		pqueue.insert(new Notruf(5, "Unfall 5", 9,38,0,3));
+		pqueue.insert(new Notruf(6, "Unfall 6", 9,40,0,2));
+		pqueue.insert(new Notruf(7, "Unfall 7", 9,42,0,2));
+		pqueue.insert(new Notruf(8, "Unfall 8", 9,44,0,1));
+		//pqueue.output();
+		System.out.println(pqueue.max());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	/*
 	    root = new Element(42);
 		root.insert(9);
 	    root.insert(8);
